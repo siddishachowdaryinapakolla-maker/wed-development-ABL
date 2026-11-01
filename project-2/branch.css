@@ -1,0 +1,133 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f8ff;
+    color: #333;
+}
+
+header {
+    background: #142b50;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+}
+
+nav a:hover {
+    color: #ffc857;
+}
+
+.banner {
+    height: 400px;
+    background: linear-gradient(
+        rgba(10, 30, 65, 0.7),
+        rgba(10, 30, 65, 0.7)
+    ), url("https://images.unsplash.com/photo-1562774053-701939374585?w=1200");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.banner h1 {
+    font-size: 42px;
+}
+
+.btn {
+    background: #f5a623;
+    color: #142b50;
+    padding: 12px 25px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+section {
+    padding: 50px 8%;
+    text-align: center;
+}
+
+section h2 {
+    color: #142b50;
+    margin-bottom: 25px;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.card {
+    background: white;
+    width: 250px;
+    padding: 30px 20px;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #ccc;
+    transition: 0.3s;
+}
+
+.card:hover {
+    transform: translateY(-8px);
+    background: #e8efff;
+}
+
+.card h3 {
+    color: #2455a4;
+    margin-bottom: 15px;
+}
+
+#about, #admission {
+    background: #e7edfa;
+}
+
+#contact {
+    background: #e7edfa;
+}
+
+footer {
+    background: #142b50;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .banner h1 {
+        font-size: 30px;
+    }
+}

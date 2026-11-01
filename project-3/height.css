@@ -1,0 +1,162 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #fff8f5;
+    color: #44302d;
+}
+
+header {
+    background: #7b3445;
+    color: white;
+    padding: 20px 6%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    transition: 0.3s;
+}
+
+nav a:hover {
+    color: #ffd5a5;
+}
+
+.hero {
+    height: 400px;
+    background: linear-gradient(
+        rgba(70, 25, 35, 0.5),
+        rgba(70, 25, 35, 0.5)
+    ), url("https://images.unsplash.com/photo-1519340333755-c892b9c6fbc1?w=1200");
+    background-size: cover;
+    background-position: center;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    gap: 20px;
+}
+
+.hero h1 {
+    font-size: 42px;
+}
+
+.btn {
+    display: inline-block;
+    background: #a84d62;
+    color: white;
+    padding: 12px 22px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+    transition: 0.3s;
+}
+
+.btn:hover {
+    background: #e69a83;
+    color: #44252b;
+}
+
+section {
+    padding: 50px 7%;
+    text-align: center;
+}
+
+section h2 {
+    color: #8b3e50;
+    margin-bottom: 25px;
+}
+
+.products {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.product {
+    width: 250px;
+    background: white;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 3px 12px #e5c9c9;
+    transition: 0.3s;
+}
+
+.product:hover {
+    transform: translateY(-8px);
+}
+
+.product img {
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.product h3 {
+    margin: 15px 0;
+    color: #8b3e50;
+}
+
+.product p {
+    margin-bottom: 10px;
+}
+
+.product h4 {
+    color: #b34b30;
+    font-size: 20px;
+}
+
+#about, #offers {
+    background: #ffe9e5;
+}
+
+.offer {
+    background: white;
+    padding: 30px;
+    max-width: 500px;
+    margin: auto;
+    border-radius: 10px;
+    box-shadow: 0 3px 12px #e5c9c9;
+}
+
+footer {
+    background: #7b3445;
+    color: white;
+    text-align: center;
+    padding: 20px;
+}
+
+@media(max-width: 700px) {
+    header {
+        flex-direction: column;
+    }
+
+    nav {
+        text-align: center;
+    }
+
+    .hero h1 {
+        font-size: 30px;
+    }
+
+    .product {
+        width: 100%;
+        max-width: 350px;
+    }
+}
